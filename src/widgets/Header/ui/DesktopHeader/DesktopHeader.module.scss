@@ -1,0 +1,76 @@
+.DesktopHeader {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	.Content {
+		width: 80%;
+
+		.Up {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+
+			.Text {
+				display: flex;
+				align-items: center;
+				gap: 100px;
+				
+				.Geo {
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					gap: 10px;
+				}
+	
+				.Phone {
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					gap: 10px;
+				}
+			}
+		}
+
+		.Down {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			gap: 40px;
+
+			.Link {
+				text-decoration: none;
+				color: black;
+				transition: 200ms;
+
+				&:hover {
+					text-shadow: 0 0 10px black;
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 900px) {
+	.DesktopHeader {
+		.Content {
+			.Up {
+				flex-direction: column;
+				margin-bottom: 20px;
+			}
+		}
+	}
+}
+
+@media (max-width: 700px) {
+	.DesktopHeader {
+		.Content {
+			.Up {
+				.Text {
+					flex-direction: column;
+					gap: 20px;
+				}
+			}
+		}
+	}
+}
