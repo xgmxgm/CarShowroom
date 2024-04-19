@@ -18,7 +18,7 @@ export const CarImg = () => {
 								<p className={styles.Text}>{Card.title}</p>
 							</div>)
 						}
-					</div>					
+					</div>		
 				</div>
 			</div>
 		</>

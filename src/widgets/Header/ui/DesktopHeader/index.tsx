@@ -7,7 +7,7 @@ export const DesktopHeader = () => {
 			<div className={styles.DesktopHeader}>
 				<div className={styles.Content}>
 					<div className={styles.Up}>
-						<Image src="Cadillac.svg" alt='logo' width={120} height={120} />
+						<Image src="/AziaLogo.png" alt='logo' width={120} height={60} />
 						<div className={styles.Text}>
 							<div className={styles.Geo}>
 								<Image src="geo.svg" alt='icon' width={25} height={25} />

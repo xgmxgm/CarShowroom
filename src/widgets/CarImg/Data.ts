@@ -10,7 +10,7 @@ export const Cards: ICard[] = [
 	},
 	{
 		icon: "money.svg",
-		title: "Первоначальный взнос от 9 000 000 ₸"
+		title: "Первоначальный взнос от 2 000 000 ₸"
 	},
 	{
 		icon: "car.svg",
