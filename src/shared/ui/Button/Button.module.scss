@@ -1,0 +1,76 @@
+.GrayButton {
+	margin: 10px 0;
+	background: #fff;
+
+	.Content {
+		color: white;
+		background: #282828;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		padding: 20px;
+		border-radius: 8px;
+		min-width: 320px;
+		font-size: 13pt;
+		border: 3px solid #282828;
+		transition: 200ms;
+
+		&:hover {
+			background: white;
+			border: 3px solid #282828;
+			color: #282828;
+		}
+	}
+}
+
+
+.BlueBorderButton {
+	margin: 10px 0;
+	background: #fff;
+
+	.Content {
+		border-radius: 8px;
+		color: #1d4fc0;
+		background: white;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		padding: 20px;
+		min-width: 320px;
+		font-size: 13pt;
+		border: 3px solid #1d4fc0;
+		transition: 200ms;
+
+		&:hover {
+			background: #E1E1E1;
+			border: 3px solid #E1E1E1;
+			color: #282828;
+		}
+	}
+}
+
+
+.BlueButton {
+	margin: 10px 0;
+	background: #fff;
+
+	.Content {
+		color: white;
+		background: #1d4fc0;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		padding: 20px;
+		border-radius: 8px;
+		min-width: 320px;
+		font-size: 13pt;
+		border: 3px solid #1d4fc0;
+		transition: 200ms;
+
+		&:hover {
+			background: white;
+			border: 3px solid #1d4fc0;
+			color: #1d4fc0;
+		}
+	}
+}

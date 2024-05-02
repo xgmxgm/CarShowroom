@@ -3,6 +3,7 @@ import styles from './CarCard.module.scss'
 import Rotate from "@/../public/rotate.svg"
 import Sale from "@/../public/sale.svg"
 import Card from "@/../public/card.svg"
+import { Button } from '../Button'
 
 interface IProps {
 	carImg: StaticImageData,
@@ -41,7 +42,9 @@ export const CarCard = ({ carImg, title, info, contribution }: IProps) => {
 							</div>
 						</div>
 						<div className={styles.Buttons}>
-
+							<Button style='gray'>Оформите предзаказ</Button>
+							<Button style='blueBorder'>Оформите предзаказ</Button>
+							<Button style='blue'>Оформите предзаказ</Button>
 						</div>
 					</div>
 				</div>

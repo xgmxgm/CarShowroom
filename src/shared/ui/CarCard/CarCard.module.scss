@@ -1,15 +1,19 @@
 .CarCard {
+	width: 75%;
+
 	.Content {
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
-		width: 70vw;
+		width: 100%;
 
 		.Right {
-
+			// width: 50%;
 		}
 
 		.Left {
+			// width: 50%;
+
 			.Texts {
 				font-size: 19pt;
 
@@ -49,6 +53,13 @@
 						}
 					}
 				}
+			}
+
+			.Buttons {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				justify-content: center;
 			}
 		}
 	}

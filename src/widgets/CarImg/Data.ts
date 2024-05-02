@@ -1,3 +1,5 @@
+
+
 interface ICard {
 	icon: string,
 	title: string
@@ -5,19 +7,19 @@ interface ICard {
 
 export const Cards: ICard[] = [
 	{
-		icon: "protect.svg",
+		icon: "/protect.png",
 		title: "Отсрочка платежа 30/70 на 1 год"
 	},
 	{
-		icon: "money.svg",
+		icon: "/money.png",
 		title: "Первоначальный взнос от 2 000 000 ₸"
 	},
 	{
-		icon: "car.svg",
+		icon: "/car.png",
 		title: "Рассрочка 0,1% на 2 года"
 	},
 	{
-		icon: "arrow.svg",
+		icon: "/rotate.png",
 		title: "Выгода по Trade-in"
 	},
 ]
