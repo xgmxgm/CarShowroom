@@ -1,0 +1,55 @@
+.CarCard {
+	.Content {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		width: 70vw;
+
+		.Right {
+
+		}
+
+		.Left {
+			.Texts {
+				font-size: 19pt;
+
+				.Title {
+					font-weight: 500;
+					margin-bottom: 10px;
+				}
+
+				.Info {
+					margin-bottom: 10px;
+				}
+
+				.Contribution {
+					color: #2F5DC5;
+					margin-bottom: 20px;
+				}
+			}
+
+			.Widgets {
+				.WidgetsText {
+					display: flex;
+					align-items: center;
+					font-size: 14pt;
+					gap: 10px;
+					margin-bottom: 10px;
+
+					& .Rotate {
+						animation: rotate 3s infinite;
+
+						@keyframes rotate {
+							0% {
+								transform: rotate(0deg);
+							}
+							100% {
+								transform: rotate(360deg);
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
