@@ -1,0 +1,63 @@
+.TradeIn {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	.Content {
+		display: flex;
+		justify-content: center;
+		height: 100%;
+		width: 100%;
+
+		.Left {
+			width: 50%;
+			height: 500px;
+			background: #E0E0E0;
+			border-radius: 20px;
+			text-align: center;
+
+			.Texts {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				justify-content: center;
+				height: 100%;
+
+				.Text {
+					margin-bottom: 50px;
+
+					.Title {
+						font-size: 36pt;
+						margin-bottom: 15px;
+					}
+
+					.Info {
+						font-size: 18pt;
+						color: #2E3549;
+						max-width: 350px;
+						text-align: left;
+					}
+				}
+
+				.Form {
+					display: flex;
+					flex-direction: column;
+					align-items: center;
+					justify-content: center;
+				}
+			}
+		}
+
+		.Right {
+			width: 50%;
+			display: flex;
+			align-items: center;
+			justify-content: flex-start;
+
+			.Img {
+				transform: translateX(-50px);
+				border-radius: 20px;
+			}
+		}
+	}
+}

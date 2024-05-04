@@ -1,5 +1,6 @@
 .CarCard {
 	width: 75%;
+	margin-bottom: 100px;
 
 	.Content {
 		display: flex;
@@ -7,12 +8,11 @@
 		justify-content: space-between;
 		width: 100%;
 
-		.Right {
-			// width: 50%;
+		@media (max-width: 1151px) {
+			flex-direction: column;
 		}
 
 		.Left {
-			// width: 50%;
 
 			.Texts {
 				font-size: 19pt;

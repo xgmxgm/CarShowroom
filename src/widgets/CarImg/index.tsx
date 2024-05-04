@@ -8,9 +8,7 @@ export const CarImg = () => {
 		<>
 			<div className={styles.CarImg}>
 				<div className={styles.Content}>
-					<div className={styles.Img}> 
-					
-					</div>
+					<div className={styles.Img}></div>
 					<div className={styles.Cards}>
 						{
 							Cards.map((Card, index) => <div className={styles.Card} key={index}>
