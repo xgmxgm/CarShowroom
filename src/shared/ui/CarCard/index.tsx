@@ -1,9 +1,13 @@
+'use client'
+
 import Image, { StaticImageData } from 'next/image'
 import styles from './CarCard.module.scss'
 import Rotate from "@/../public/rotate.svg"
 import Sale from "@/../public/sale.svg"
 import Card from "@/../public/card.svg"
 import { Button } from '../Button'
+import { useState } from 'react'
+import { Modal } from '../Modal'
 
 interface IProps {
 	carImg: StaticImageData,
@@ -14,6 +18,7 @@ interface IProps {
 }
 
 export const CarCard = ({ carImg, title, info, contribution, side }: IProps) => {
+	const [active, setActive] = useState<boolean>(false)
 	
 	if (side == "left") {
 		return (
@@ -44,13 +49,14 @@ export const CarCard = ({ carImg, title, info, contribution, side }: IProps) => 
 								</div>
 							</div>
 							<div className={styles.Buttons}>
-								<Button style='gray'>Оформите предзаказ</Button>
-								<Button style='blueBorder'>Оформите предзаказ</Button>
-								<Button style='blue'>Оформите предзаказ</Button>
+								<Button setActive={setActive} active={active} style='gray'>Оформите предзаказ</Button>
+								<Button setActive={setActive} active={active} style='blueBorder'>Получить предложение</Button>
+								<Button setActive={setActive} active={active} style='blue'>Подобрать комплектацию</Button>
 							</div>
 						</div>
 					</div>
 				</div>
+				{ active && <Modal setActive={setActive} />}
 			</>
 		)
 	}
@@ -81,9 +87,9 @@ export const CarCard = ({ carImg, title, info, contribution, side }: IProps) => 
 								</div>
 							</div>
 							<div className={styles.Buttons}>
-								<Button style='gray'>Оформите предзаказ</Button>
-								<Button style='blueBorder'>Оформите предзаказ</Button>
-								<Button style='blue'>Оформите предзаказ</Button>
+								<Button setActive={setActive} active={active} style='gray'>Оформите предзаказ</Button>
+								<Button setActive={setActive} active={active} style='blueBorder'>Получить предложение</Button>
+								<Button setActive={setActive} active={active} style='blue'>Подобрать комплектацию</Button>
 							</div>
 						</div>
 						<div className={styles.Right}>
@@ -91,6 +97,7 @@ export const CarCard = ({ carImg, title, info, contribution, side }: IProps) => 
 						</div>
 					</div>
 				</div>
+				{ active && <Modal setActive={setActive} />}
 			</>
 		)
 	}

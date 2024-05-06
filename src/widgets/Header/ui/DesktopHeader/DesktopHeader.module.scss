@@ -32,23 +32,6 @@
 				}
 			}
 		}
-
-		.Down {
-			display: flex;
-			align-items: center;
-			justify-content: center;
-			gap: 40px;
-
-			.Link {
-				text-decoration: none;
-				color: black;
-				transition: 200ms;
-
-				&:hover {
-					text-shadow: 0 0 10px black;
-				}
-			}
-		}
 	}
 }
 

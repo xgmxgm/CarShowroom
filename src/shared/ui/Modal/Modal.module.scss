@@ -1,0 +1,84 @@
+.Modal {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba($color: #000000, $alpha: 0.7);
+	z-index: 10;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	animation: open 400ms 1;
+
+	.Contetn {
+		background: #bfbfbf;
+		padding: 50px;
+		text-align: center;
+		width: 300px;
+		animation: openForModal 400ms 1;
+
+		.Input {
+			font-size: 14pt;
+			border-radius: 5px;
+			height: 55.6px;
+			text-align: center;
+			margin: 10px;
+			width: 100%;
+			max-width: 100%;
+
+			@media (max-width: 400px) {
+				width: 300px;
+			}
+		}
+
+		.Button {
+			margin: 10px 0;
+			background: transparent;
+			cursor: pointer;
+
+			.Content {
+				color: white;
+				background: #282828;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				padding: 20px;
+				border-radius: 8px;
+				font-size: 13pt;
+				border: 3px solid #282828;
+				transition: 200ms;
+
+				@media (max-width: 400px) {
+					min-width: 0px;
+				}
+
+				&:hover {
+					background: white;
+					border: 3px solid #282828;
+					color: #282828;
+				}
+			}
+		}
+	}
+}
+
+@keyframes open {
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+
+@keyframes openForModal {
+	0% {
+		transform: scale(0);
+	}
+
+	100% {
+		transform: scale(1);
+	}
+}

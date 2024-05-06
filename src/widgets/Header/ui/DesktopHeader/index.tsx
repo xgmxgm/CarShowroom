@@ -19,11 +19,6 @@ export const DesktopHeader = () => {
 							</div>
 						</div>
 					</div>
-					<div className={styles.Down}>
-						<a className={styles.Link} href="">ТРЕЙД-ИН</a>
-						<a className={styles.Link} href="">ТЕСТ-ДРАЙВ</a>
-						<a className={styles.Link} href="">КОНТАКТЫ</a>
-					</div>
 				</div>
 			</div>
 		</>

@@ -1,9 +1,15 @@
+'use client'
+
 import { Button } from '@/shared/ui/Button'
 import styles from './TradeIn.module.scss'
 import { Input } from '@/shared/ui/Input'
 import Image from 'next/image'
+import { useState } from 'react'
+import { Modal } from '@/shared/ui/Modal'
 
 export const TradeIn = () => {
+	const [active, setActive] = useState<boolean>(false);
+
 	return (
 		<>
 			<div className={styles.TradeIn}> 
@@ -16,7 +22,7 @@ export const TradeIn = () => {
 							</div>
 							<div className={styles.Form}>
 								<Input />
-								<Button style='gray'>Получить предложение</Button>
+								<Button setActive={setActive} active={active} style='gray'>Получить предложение</Button>
 							</div>
 						</div>
 					</div>
@@ -25,6 +31,7 @@ export const TradeIn = () => {
 					</div>
 				</div>
 			</div>
+			{ active && <Modal setActive={setActive} /> }
 		</>
 	)
 }

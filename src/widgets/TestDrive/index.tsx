@@ -1,10 +1,16 @@
+'use client'
+
 import Image from 'next/image'
 import Granta from "@/../public/GrantaPro.jpg"
 import styles from './TestDrive.module.scss'
 import { Input } from '@/shared/ui/Input'
 import { Button } from '@/shared/ui/Button'
+import { useState } from 'react'
+import { Modal } from '@/shared/ui/Modal'
 
 export const TestDrive = () => {
+	const [active, setActive] = useState<boolean>(false);
+
 	return (
 		<>
 			<div className={styles.TestDrive}>
@@ -19,11 +25,12 @@ export const TestDrive = () => {
 						</div>
 						<div className={styles.Form}>
 							<Input style={{maxWidth: "365px"}} />
-							<Button style='gray'>Получить предложение</Button>
+							<Button setActive={setActive} active={active} style='gray'>Получить предложение</Button>
 						</div>
 					</div>
 				</div>
 			</div>
+			{ active && <Modal setActive={setActive} /> }
 		</>
 	)
 }
