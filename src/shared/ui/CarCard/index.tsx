@@ -21,7 +21,7 @@ export const CarCard = ({ carImg, title, info, contribution, side }: IProps) => 
 				<div className={styles.CarCard}>
 					<div className={styles.Content}>
 						<div className={styles.Right}>
-							<Image src={carImg} alt='Car img' width={600} height={310} style={{maxWidth: "100%", maxHeight: "100%"}} />
+							<Image src={carImg} alt='Car img' width={600} height={310} style={{maxWidth: "100%", height: "100%"}} />
 						</div>
 						<div className={styles.Left}>
 							<div className={styles.Texts}>
@@ -87,7 +87,7 @@ export const CarCard = ({ carImg, title, info, contribution, side }: IProps) => 
 							</div>
 						</div>
 						<div className={styles.Right}>
-							<Image src={carImg} alt='Car img' width={600} height={310} />
+							<Image src={carImg} alt='Car img' width={600} height={310} style={{maxWidth: "100%", height: "100%"}} />
 						</div>
 					</div>
 				</div>

@@ -1,5 +1,4 @@
 .Input {
-	border: 1px solid black;
 	font-size: 14pt;
 	border-radius: 5px;
 	height: 55.6px;
@@ -7,4 +6,8 @@
 	margin: 10px;
 	width: 100%;
 	max-width: 100%;
+
+	@media (max-width: 400px) {
+		width: 300px;
+	}
 }

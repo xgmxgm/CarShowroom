@@ -1,17 +1,21 @@
 .TradeIn {
-	display: flex;
-	align-items: center;
-	justify-content: center;
+	margin-bottom: 100px;
 
 	.Content {
 		display: flex;
 		justify-content: center;
+		align-items: center;
 		height: 100%;
 		width: 100%;
 
+		@media (max-width: 1250px) {
+			flex-direction: column;
+		}
+
 		.Left {
-			width: 50%;
+			width: 600px;
 			height: 500px;
+			max-width: 100%;
 			background: #E0E0E0;
 			border-radius: 20px;
 			text-align: center;
@@ -29,6 +33,10 @@
 					.Title {
 						font-size: 36pt;
 						margin-bottom: 15px;
+
+						@media (max-width: 450px) {
+							font-size: 30pt;
+						}
 					}
 
 					.Info {
@@ -36,6 +44,10 @@
 						color: #2E3549;
 						max-width: 350px;
 						text-align: left;
+
+						@media (max-width: 450px) {
+							font-size: 15pt;
+						}
 					}
 				}
 
@@ -49,14 +61,19 @@
 		}
 
 		.Right {
-			width: 50%;
+			max-width: 100%;
 			display: flex;
 			align-items: center;
-			justify-content: flex-start;
 
 			.Img {
+				max-width: 100%;
+				height: auto;
 				transform: translateX(-50px);
 				border-radius: 20px;
+
+				@media (max-width: 1250px) {
+					transform: translateX(0px);
+				}
 			}
 		}
 	}

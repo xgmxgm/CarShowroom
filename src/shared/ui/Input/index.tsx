@@ -1,14 +1,19 @@
 'use client'
 
-import { useState } from 'react'
+import { CSSProperties, HTMLAttributes, useState } from 'react'
 import styles from "./Input.module.scss"
 
-export const Input = () => {
+interface IProps {
+	style?: CSSProperties,
+}
+
+export const Input = ({ style }: IProps) => {
 	const [inputValue, setInputValue] = useState<string>('')
 
 	return (
 		<>
 			<input
+				style={style}
 				type="tel"
 				placeholder='+7 (999) 999-99-99'
 				className={styles.Input}

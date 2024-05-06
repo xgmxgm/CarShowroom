@@ -21,7 +21,7 @@ export const TradeIn = () => {
 						</div>
 					</div>
 					<div className={styles.Right}>
-						<Image className={styles.Img} src="/PrioraPro.jpg" alt='img' width={800} height={460} />
+						<Image className={styles.Img} src="/PrioraPro.jpg" alt='img' width={790} height={460} />
 					</div>
 				</div>
 			</div>

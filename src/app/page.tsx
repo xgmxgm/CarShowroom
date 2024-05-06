@@ -2,6 +2,7 @@ import { CarImg } from '@/widgets/CarImg'
 import styles from "./page.module.css";
 import { Cars } from '@/widgets/Cars'
 import { TradeIn } from '@/widgets/TradeIn'
+import { TestDrive } from '@/widgets/TestDrive'
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
           <CarImg />
           <Cars />
           <TradeIn />
+          <TestDrive />
         </div>
       </div>
     </>

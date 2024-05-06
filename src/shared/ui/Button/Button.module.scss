@@ -1,6 +1,7 @@
 .GrayButton {
 	margin: 10px 0;
-	background: #fff;
+	background: transparent;
+	cursor: pointer;
 
 	.Content {
 		color: white;
@@ -15,6 +16,10 @@
 		border: 3px solid #282828;
 		transition: 200ms;
 
+		@media (max-width: 400px) {
+			min-width: 0px;
+		}
+
 		&:hover {
 			background: white;
 			border: 3px solid #282828;
@@ -27,6 +32,7 @@
 .BlueBorderButton {
 	margin: 10px 0;
 	background: #fff;
+	cursor: pointer;
 
 	.Content {
 		border-radius: 8px;
@@ -41,6 +47,10 @@
 		border: 3px solid #1d4fc0;
 		transition: 200ms;
 
+		@media (max-width: 400px) {
+			min-width: 0px;
+		}
+
 		&:hover {
 			background: #E1E1E1;
 			border: 3px solid #E1E1E1;
@@ -53,6 +63,7 @@
 .BlueButton {
 	margin: 10px 0;
 	background: #fff;
+	cursor: pointer;
 
 	.Content {
 		color: white;
@@ -66,6 +77,10 @@
 		font-size: 13pt;
 		border: 3px solid #1d4fc0;
 		transition: 200ms;
+
+		@media (max-width: 400px) {
+			min-width: 0px;
+		}
 
 		&:hover {
 			background: white;
