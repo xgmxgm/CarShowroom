@@ -9,9 +9,9 @@ export const Cars = () => {
 		<>
 			<div className={styles.Cars}>
 				<div className={styles.Content}>
-					<CarCard carImg={LadaPriora} title='Lada Priora' info='ИНТЕРЬЕР РУЧНОЙ РАБОТЫ' contribution={9_000_000} side='left' />
-					<CarCard carImg={LadaGranta} title='Lada Granta' info='ИНТЕРЬЕР РУЧНОЙ РАБОТЫ' contribution={9_000_000} side='right' />
-					<CarCard carImg={LadaNiva} title='Lada Niva' info='ИНТЕРЬЕР РУЧНОЙ РАБОТЫ' contribution={9_000_000} side='left' />
+					<CarCard carImg={LadaPriora} title='Lada Priora' info='ИНТЕРЬЕР РУЧНОЙ РАБОТЫ' contribution={170_000} side='left' />
+					<CarCard carImg={LadaGranta} title='Lada Granta' info='ИНТЕРЬЕР РУЧНОЙ РАБОТЫ' contribution={200_000} side='right' />
+					<CarCard carImg={LadaNiva} title='Lada Niva' info='ИНТЕРЬЕР РУЧНОЙ РАБОТЫ' contribution={120_000} side='left' />
 				</div>
 			</div>
 		</>
